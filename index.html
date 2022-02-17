@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+    <header>
+        
+        <h1 id="title">Microverse Survey Form</h1>
+        <strong><p id="description" style = "font-size: larger;">Thankyou for taking time to help us to improve the platform</p></strong>
+
+    </header>
+
+    <main>
+        <div class = "form-main">
+        <form id="survey-form">
+            <div class = "form-group">
+            <label for = "name" id = "name-label">
+                FIRST NAME: <br><input type="text" id="name" class = "form-control" name="first name" placeholder= "Enter FIRST Name" required><br><br>
+            </label>
+            </div>
+            
+            <div class = "form-group">
+            <label for = "last name">
+                LAST NAME: <br><input type="text" id="last name" class = "form-control" name="last name" placeholder= "Enter LAST Name" required><br><br>
+            </label>
+            </div>
+
+            <div class = "form-group">
+            <label for="number" id = "number-label">
+                ROLL NO.: <br><input type="number" id="number" class = "form-control" name="ROLL NO" min="0" max = "10" placeholder="Select Roll No." ><br><br>
+            </label>
+            </div>   
+            
+            <div class = "form-group">
+            <label for = "email" id = "email-label">
+                EMAIL: <br><input type="email" id="email" class = "form-control" name="EMAIL" placeholder= "Enter your mail ID." required><br><br>
+            </label>
+            </div>
+                
+            <div class = "form-group">
+            <label for="contact">
+                CONTACT: <br><input type="tel" id="contact" class = "form-control" name="contact" min="10" placeholder="Enter your Phone Number"><br><br>
+            </label>
+            </div>
+                
+            <div class = "form-group">
+            WHAT IS YOUR GENDER?<br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for = "male">MALE</label><br>
+                
+            <input type="radio" id="female" name="gender" value="female">
+            <label for = "female">FEMALE</label><br>
+                
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">DON'T WISH TO MENTION</label><br><br>
+            </div>
+                
+
+            <div class = "form-group">
+            <label for = "dropdown">WHAT IS YOUR CURRENT ROLE?<br>
+                <select id="dropdown" class = "form-control" style = "width: 100% ;" name = "Current Role" required>
+                    <option disabled selected value>SELECT AN OPTION</option>
+                    <option value = "FULL TIME EMPLOYEE">FULL TIME EMPLOYEE</option>
+                    <option value = "FREELANCER">FREELANCER</option>
+                    <option value = "STUDENT">STUDENT</option>
+                    <option value = "FRESHER">FRESHER</option>
+                </select><br><br>
+            </label>
+            </div>   
+
+            <div class = "form-group">  
+            WHAT ARE YOUR SKILLSET?<br>
+            <input type="checkbox" id="skill1" name="skill1" value="JAVA">
+            <label for="skill1"> JAVA</label><br>
+                
+            <input type="checkbox" id="skill2" name="skill2" value="PYTHON">
+            <label for="skill2"> PYTHON</label><br>
+                
+            <input type="checkbox" id="skill3" name="skill3" value="JAVASCRIPT">
+            <label for="skill3"> JAVASCRIPT</label><br>
+
+            <input type="checkbox" id="skill4" name="skill4" value="DATA-STRUCTURE">
+            <label for="skill4"> DATA-STRUCTURE</label><br>
+
+            <input type="checkbox" id="skill5" name="skill5" value="ALGORITHMS">
+            <label for="skill5"> ALGORITHMS</label><br>
+
+            <input type="checkbox" id="skill6" name="skill6" value="REACT">
+            <label for="skill6"> REACT</label><br>
+
+            <input type="checkbox" id="skill7" name="skill7" value="SPRING">
+            <label for="skill7"> SPRING</label><br><br>
+            </div> 
+
+            <div class = "form-group">
+            WOULD YOU RECOMMEND MICROVERSE TO A FRIEND?<br>
+            <input type="radio" id = "yes" name="RECOMMEND" value="yes">
+            <label for = "yes">DEFINITELY</label><br>
+                
+            <input type="radio" id="NO" name="RECOMMEND" value="NO">
+            <label for = "NO">NEVER</label><br>
+                
+            <input type="radio" id= "not sure" name="RECOMMEND" value="not sure">
+            <label for="not sure">NOT SURE</label><br><br>
+            </div>
+
+            <div class = "form-group">
+            <label for = "dropdown">WHAT YOU LIKE MOST ABOUT MICROVERSE?<br>
+                <select id="dropdown" class = "form-control" style = "width: 100% ;" name = "FEATURES" required>
+                    <option disabled selected value>SELECT AN OPTION</option>
+                    <option value = "COLLABORATIONS">COLLABORATIONS</option>
+                    <option value = "CHALLANGES">CODING CHALLANGES</option>
+                    <option value = "PROJECTS">PROJECTS</option>
+                    <option value = "GURANTEE">JOB GURANTEE</option>
+                </select><br><br>
+            </label>
+            </div>
+            
+            <div class = "form-group">
+            ANY COMMENTS OR SUGGESTIONS?<br>
+            <textarea name="comment" id = "comment-area" placeholder="WRITE YOUR COMMENTS HERE..."></textarea><br>
+            </div>
+                
+            <div class = "form-group">
+            <button id= "submit">SUBMIT</button>
+            </div>
+
+        
+        </form>
+        </div>
+        
+
+    </main>
+    
+    
+</body>
+</html>

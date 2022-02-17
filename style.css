@@ -1,0 +1,43 @@
+body {
+    background-color:rgb(131, 160, 245);
+}
+
+main {
+    background-color: rgb(10, 10, 54);
+    width: 40%;
+    margin-left: 28vw;
+    padding: 2vh;
+    color:mintcream;
+    font-weight: bold;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+.form-control {
+    width: 97%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    background-color: lightgray;
+    margin-top: 5px;
+}
+#comment-area {
+    width: 97%;
+    min-height: 120px;
+    padding: 8px;
+    background-color: lightgray;
+    resize: vertical;
+    margin-top: 5px;
+
+}
+
+#submit {
+    padding: 15px; width: 100%;
+    background-color: #37AF65; 
+    margin-top: 5px; 
+    font-size: large;
+    font-weight: bolder;
+}
